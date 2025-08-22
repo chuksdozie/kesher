@@ -6,7 +6,7 @@ const getNames = async () => {
     return response.data;}
 
 const addName = async (name: string) => {
-    const response = await API.post('/?path=Sheet1&action=write&Users=', name );}
+    const response = await API.post(`/?path=Sheet1&action=write&Users=${name}` );}
 
 
 export default function Sheet() {
