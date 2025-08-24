@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState } from "react";
 import { Inter, Karla } from "next/font/google";
+import DashboardLayout from "@/layout/DashboardLayout";
 
 const inter = Karla({ subsets: ["latin"] });
 
@@ -12,7 +13,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <main className={inter.className}>
       <QueryClientProvider client={queryClient}>
-        <Component {...pageProps} />
+        <DashboardLayout>
+          <Component {...pageProps} />
+        </DashboardLayout>
       </QueryClientProvider>
     </main>
   );
