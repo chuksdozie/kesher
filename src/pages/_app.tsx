@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(() => new QueryClient());
 
   return (
-    <main className={inter.className}>
+    <main className={`${inter.className} text-gray-600`}>
       <QueryClientProvider client={queryClient}>
         <DashboardLayout>
           <Component {...pageProps} />
