@@ -24,7 +24,7 @@ export default function Text() {
       {isLoading && <div>Loading...</div>}
       {error && <div>Error: {(error as Error).message}</div>}
       {names.map((name: nameType, index: number) => (
-        <div key={index} className=" my-1 text-sm">
+        <div key={index} className={`my-1 text-sm text-[#456aac]`}>
           {name.Users}
         </div>
       ))}
