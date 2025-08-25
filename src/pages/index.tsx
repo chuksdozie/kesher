@@ -1,16 +1,11 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Button from "@/components/Button";
 
 export default function Home() {
-  return <div className={`bg-amber-300`}>Kesher starts here</div>;
+  return (
+    <div className={`bg-amber-300`}>
+      Kesher starts here
+      <Button variant="primary" />
+      <Button variant="secondary" />
+    </div>
+  );
 }
