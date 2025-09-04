@@ -16,7 +16,7 @@ export default function NavElement({
   return (
     <Link
       href={href}
-      className={`text-2xl p-2 ${path === href ? "text-[#1A74EA]" : "text-gray-900"}`}
+      className={`text-2xl p-2 border-b border-gray-50 ${path === href ? "text-[#b29e2b] font-bold" : "text-gray-50 "}`}
     >
       <button onClick={toggleOpen}>{text}</button>
     </Link>

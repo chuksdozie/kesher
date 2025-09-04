@@ -7,7 +7,7 @@ import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 export default function Dashboard(): React.JSX.Element {
   const user: string = useGetUser();
   return (
-    <section>
+    <section className="mt-20">
       <h1 className="text-3xl font-bold p-4">Welcome {user},</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
         <Card
