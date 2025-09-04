@@ -35,8 +35,8 @@ export function useSheet() {
 
   return {
     names: users?.data || [],
-    isLoading: mutation.isPending,
-    error: mutation.error,
+    isLoading,
+    error,
     addName: mutation.mutate,
   };
 }
