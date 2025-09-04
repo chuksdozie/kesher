@@ -23,9 +23,21 @@ export default function Sidebar({
             </button>
           </div>
           <nav className="mt-20 flex flex-col justify-center ">
-            <NavElement href={"/dashboard"} text={"Dashboard"} />
-            <NavElement href={"/events"} text={"Events"} />
-            <NavElement href={"/admin"} text={"Admin"} />
+            <NavElement
+              href={"/dashboard"}
+              text={"Dashboard"}
+              toggleOpen={toggleOpen}
+            />
+            <NavElement
+              href={"/events"}
+              text={"Events"}
+              toggleOpen={toggleOpen}
+            />
+            <NavElement
+              href={"/admin"}
+              text={"Admin"}
+              toggleOpen={toggleOpen}
+            />
           </nav>
         </div>
       </aside>
