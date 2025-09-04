@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState } from "react";
 import { Outfit } from "next/font/google";
-import DashboardLayout from "@/layout/DashboardLayout";
+import DefaultLayout from "@/layout/DefaultLayout";
 
 const inter = Outfit({ subsets: ["latin"] });
 
@@ -14,9 +14,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <main className={`${inter.className} text-gray-600 text-xs`}>
       <QueryClientProvider client={queryClient}>
-        <DashboardLayout>
+        <DefaultLayout>
           <Component {...pageProps} />
-        </DashboardLayout>
+        </DefaultLayout>
       </QueryClientProvider>
     </main>
   );

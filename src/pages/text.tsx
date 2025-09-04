@@ -1,4 +1,4 @@
-import useSheet from "@/hooks/Sheet";
+import { useSheet } from "@/hooks";
 import React from "react";
 type nameType = { Users: string };
 export default function Text() {
@@ -24,7 +24,7 @@ export default function Text() {
       {isLoading && <div>Loading...</div>}
       {error && <div>Error: {(error as Error).message}</div>}
       {names.map((name: nameType, index: number) => (
-        <div key={index} className={`my-1 text-sm text-[#456aac]`}>
+        <div key={index} className={` text-sm text-[#456aac]`}>
           {name.Users}
         </div>
       ))}
