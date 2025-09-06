@@ -1,3 +1,4 @@
+import React from "react";
 import { IconType } from "react-icons";
 import { TbCurrencyNaira } from "react-icons/tb";
 type CardProps = {
@@ -16,18 +17,18 @@ export default function Card({
   const colorClass = {
     red: "text-[#A50303]",
     green: "text-[#028402]",
-    blue: "text-[#131373]",
+    blue: "text-primaryMain",
   };
   return (
-    <div className="flex shadow-md rounded-lg bg-blue-50">
+    <div className="flex rounded-lg bg-white border border-gray-200 p-4 gap-2">
       <div className="flex p-2">
-        <Icon className={` self-center w-14 h-14 ${colorClass[color]}`} />
+        <Icon className={` self-center  ${colorClass[color]}`} size={25} />
       </div>
-      <div className="flex flex-col h-20pace-y-2  p-4 ">
-        <h2 className="text-xl font-bold mb-2 truncate self-center">{title}</h2>
-        <div className="flex space-x-2">
-          <div className=" self-center">
-            <TbCurrencyNaira className="w-10 h-12" />
+      <div className="flex flex-col  py-2  items-start min-w-[250px]">
+        <h2 className="text-base  mb truncate text-textMain ">{title}</h2>
+        <div className="flex ">
+          <div className="">
+            <TbCurrencyNaira className="" size={35} />
           </div>
           <div className="self-center">
             <p className={`text-3xl font-semibold ${colorClass[color]}`}>

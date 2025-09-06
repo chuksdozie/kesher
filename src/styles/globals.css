@@ -10,6 +10,18 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-primaryMain: #184069;
+  --color-primaryLight: #87bef5;
+  --color-primaryDark: #033261;
+
+  --color-secondary: #8425b8;
+
+  --color-textMain: #474646;
+  --color-textSub: #827f7f;
+
+  --color-bgLight: #eae4ed;
+  --color-bgDark: #252426;
 }
 
 /* @media (prefers-color-scheme: dark) {
