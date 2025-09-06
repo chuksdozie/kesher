@@ -13,13 +13,13 @@ export default function DefaultLayout({
     setIsOpen(!isOpen);
   };
   return (
-    <div className="h-screen flex flex-col ">
-      <header>
+    <div className="h-screen flex ">
+      <Siderbar isOpen={isOpen} toggleOpen={toggleOpen} />
+      <div className="flex-1 flex flex-col">
         <Navbar isOpen={isOpen} toggleOpen={toggleOpen} />
-      </header>
-      <div className="flex flex-1 overflow-hidden">
-        <Siderbar isOpen={isOpen} toggleOpen={toggleOpen} />
-        <main className="flex-1 overflow-y-auto ">{children}</main>
+        <div className="flex-1 p-6 overflow-y-auto w-full bg-gray-50">
+          {children}
+        </div>
       </div>
     </div>
   );
