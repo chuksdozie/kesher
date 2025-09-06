@@ -13,7 +13,7 @@ export default function DefaultLayout({
     setIsOpen(!isOpen);
   };
   return (
-    <div className="h-screen flex flex-col pt-16">
+    <div className="h-screen flex flex-col ">
       <header>
         <Navbar isOpen={isOpen} toggleOpen={toggleOpen} />
       </header>
